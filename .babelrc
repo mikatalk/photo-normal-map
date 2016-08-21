@@ -1,9 +1,0 @@
-{
-  "presets": [
-    "babel-preset-es2015"
-  ],
-  plugins: [
-    "babel-plugin-transform-exponentiation-operator",
-    "babel-plugin-transform-object-assign"
-  ]
-}
