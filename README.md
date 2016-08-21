@@ -1,7 +1,7 @@
-# three-es6-s3-boilerplate
+# photo-normal-map
 Just like the repo title says: ThreeJS with ES6 to S3 bucket boilerplate project using Webpack
 
-Live Demo: https://mikatalk.github.io/three-es6-s3-boilerplate/
+Live Demo: https://mikatalk.github.io/photo-normal-map/
 
 ### Install/Setup
 `npm install`
