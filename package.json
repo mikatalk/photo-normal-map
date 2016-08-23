@@ -35,7 +35,7 @@
     "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-plugin-transform-runtime": "^6.8.0",
     "randomcolor": "^0.4.4",
-    "three": "latest",
+    "three": "^0.79.0",
     "three-orbit-controls": "https://github.com/mattdesl/three-orbit-controls"
   },
   "devDependencies": {
