@@ -76,9 +76,10 @@ export default class Step02 {
         this.camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
         this.camera.position.z = 1000;
         
-        this.renderer = new THREE.WebGLRenderer();
+        this.renderer = new THREE.WebGLRenderer({alpha:true});
         this.renderer.setSize( window.innerWidth, window.innerHeight );
- 
+        this.renderer.setClearColor( 0x000000, 0 );
+        
         document.body.appendChild( this.renderer.domElement );
 
         this.rtt = new RTT(512, 512, this.mousePosition);
@@ -88,10 +89,10 @@ export default class Step02 {
         this.scene.add( this.mesh );
 
         // let ambientLight = new THREE.AmbientLight( 0x888888 );
-        let ambientLight = new THREE.AmbientLight( 0xffffff );
+        let ambientLight = new THREE.AmbientLight( 0x777777 );
         this.scene.add( ambientLight );
 
-        this.light = new THREE.PointLight( 0xffffff, 1.0, 5000 );
+        this.light = new THREE.PointLight( 0x777777, 1.0, 5000 );
         this.scene.add( this.light );
         this.light.position.z = this.camera.position.y;
 
@@ -137,7 +138,7 @@ export default class Step02 {
         let geometry = new THREE.PlaneBufferGeometry( frameSize.x, frameSize.y );
         let material = new THREE.MeshPhongMaterial( { 
             // color: 0xffffff,
-            color: 0x777777,
+            // color: 0x777777,
             // color: 0,
             // map: this.loader.load('img/center-512.png'),
             map: this.paperTexture,
